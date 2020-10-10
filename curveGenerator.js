@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         canvas = d3.select('#canvas')
             .attr('width', canvasSize)
             .attr('height', canvasSize)
-            .style('background-color', 'black');
+            .style('background-color', '#111');
     
         t = 0.04;
         while (t < 10)
