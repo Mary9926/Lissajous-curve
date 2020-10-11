@@ -13,7 +13,7 @@
 <body> 
 
     <div class="row m-0 p-2">
-        <div class="col-12 col-md-6 col-lg-4 p-5 font-weight-bold text-white">
+        <div class="text-color col-12 col-md-6 col-lg-4 p-5 font-weight-bold">
             <h2>Hello! Welcome to Lissajous Curve symulator.</h2><br>
             <h4>Lissajous Curve Eguation:<h4>
             <h3>  x = Asin(at + phase)<br> y = Bcos(at) <br><br>where A annd B - amplitude <br> a,b - angular frequency<br> and t - time <h3> 
@@ -23,44 +23,44 @@
             <div class="w-100 p-5 d-flex flex-column align-items-center">
                 <svg id="canvas" class="d-block"></svg>
                 <form class="col-lg-8 col-xl-6 p-0 mt-2">
-                    <div class="form-group d-flex p-3">
+                    <div class="slidecontainer d-flex p-3">
                         <div class="d-flex flex-column" >
                             <label class="font-weight-bold m-auto label-blue" for="A-slider">A</label>
                         </div>
-                        <input type="range" class="form-control-range ml-4 mr-4" id="A-slider" min="100" max="200" value="100">
+                        <input type="range" class="slider ml-4 mr-4" id="A-slider" min="100" max="200" value="100">
                         <label class="font-weight-bold m-auto label-blue" id="A-label" for="A-slider"></label>
                     </div>
 
-                    <div class="form-group  d-flex p-3">
+                    <div class="slidecontainer d-flex p-3">
                         <div class="d-flex flex-column">
-                            <label class= "font-weight-bold m-auto" style="color:#5cb5b5" for="B-slider">B</label>
+                            <label class= "font-weight-bold m-auto label-blue" for="B-slider">B</label>
                         </div>
-                        <input type="range" class="form-control-range ml-4 mr-4"  id="B-slider" min="100" max="200" value="100">
-                        <label class="font-weight-bold m-auto" id="B-label"  style="color:#5cb5b5" for="B-slider"></label>
+                        <input type="range" class="slider ml-4 mr-4"  id="B-slider" min="100" max="200" value="100">
+                        <label class="font-weight-bold m-auto label-blue" id="B-label"  for="B-slider"></label>
                     </div>
 
-                    <div class="form-group  d-flex p-3">
+                    <div class="slidecontainer  d-flex p-3">
                         <div class="d-flex flex-column">
-                            <label class= "font-weight-bold m-auto" style="color:#5cb5b5" for="a-slider">a</label>
+                            <label class= "font-weight-bold m-auto label-blue"  for="a-slider">a</label>
                         </div>
-                        <input type="range" class="form-control-range ml-4 mr-4" id="a-slider" min="1" max="20" value="4">
-                        <label class="font-weight-bold m-auto" id="a-label"  style="color:#5cb5b5" for="a-slider"></label>
+                        <input type="range" class="slider ml-4 mr-4" id="a-slider" min="1" max="20" value="4">
+                        <label class="font-weight-bold m-auto label-blue" id="a-label"  for="a-slider"></label>
                     </div>
 
-                    <div class="form-group d-flex p-3">
+                    <div class="slidecontainer d-flex p-3">
                         <div class="d-flex flex-column">
-                            <label class= "font-weight-bold m-auto"  style="color:#5cb5b5" for="b-slider">b</label>
+                            <label class= "font-weight-bold m-auto label-blue" for="b-slider">b</label>
                         </div>
-                        <input type="range" class="form-control-range ml-4 mr-4" id="b-slider" min="1" max="20" value="6">
-                        <label class="font-weight-bold m-auto" id="b-label"  style="color:#5cb5b5" for="b-slider"></label>
+                        <input type="range" class="slider ml-4 mr-4" id="b-slider" min="1" max="20" value="6">
+                        <label class="font-weight-bold m-auto label-blue" id="b-label" for="b-slider"></label>
                     </div>
 
-                    <div class="form-group d-flex p-3">
+                    <div class="slidecontainer d-flex p-3">
                         <div class="d-flex flex-column">
-                            <label class= "font-weight-bold m-auto"  style="color:#5cb5b5" for="phase-slider">phase</label>
+                            <label class= "font-weight-bold m-auto label-blue"  for="phase-slider">phase</label>
                         </div>
-                        <input type="range"  class="form-control-range ml-4 mr-4" id="phase-slider" min="0" max="4" value="1">
-                        <label class="font-weight-bold m-auto" id="phase-label"  style="color:#5cb5b5" for="phase-slider"></label>
+                        <input type="range"  class="slider ml-4 mr-4" id="phase-slider" min="0" max="4" value="1">
+                        <label class="font-weight-bold m-auto label-blue" id="phase-label"  for="phase-slider"></label>
                     </div>
                 </form>
             </div>

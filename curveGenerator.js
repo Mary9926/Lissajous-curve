@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         canvas = d3.select('#canvas')
             .attr('width', canvasSize)
             .attr('height', canvasSize)
-            .style('background-color', '#111');
+            .style('background-color', '#373A40');
     
         t = 0.04;
         while (t < 10)
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
             pointEnd = calcPoint(a, A, b, B, phase, t + 0.01);
     
             canvas.append('line')
-             .style("stroke", "violet")
-             .style("stroke-width", 2)
+             .style("stroke", "#19D3DA")
+             .style("stroke-width", 5)
              .attr("x1", (canvasSize/2) + pointStart.x)
              .attr("y1", (canvasSize/2) - pointStart.y)
              .attr("x2", (canvasSize/2) + pointEnd.x)
